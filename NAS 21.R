@@ -1,0 +1,10 @@
+library(forecast)
+library(haven)
+# load file
+rm(df)
+df<- read.csv("C:/Users/JayRoy/Desktop/NAS 21/newdata_example3.csv",sep = "|")
+head(df)
+write.csv(df,"C:\\Users\\JayRoy\\Desktop\\NAS 21\\newdata_example3.csv")
+df_1<- read.csv("C:/Users/JayRoy/Desktop/NAS 21/newdata2.csv",sep = "|")
+dim(df_1)
+write.csv(df_1,"C:\\Users\\JayRoy\\Desktop\\NAS 21\\ex.csv")
